@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- TailWindCSS cdn -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>JavaScript Net</title>
+        <!-- FlowBite cdn -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css"  rel="stylesheet" />
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <!-- font awesome cdn link  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- logo icon -->
+        <link rel="icon">
+        
+    </head>
+<body>
+
+    <div class="bg-future h-screen w-full bg-no-repeat bg-cover text-white row-auto flex justify-center">
+        <div class="container m-auto grid grid-cols-1 px-5 lg:px-[20%]">
+            <div class="bg-color1 h-20 text-center flex flex-row items-center justify-center">
+                <h1 class="text-4xl self-center font-bold">Internet Payment</h1>
+            </div>
+            <div class="grid grid-cols-2">
+                <div class="bg-blue-400 h-20 text-center flex flex-row items-center justify-center space-x-2">
+                    <ion-icon name="play-circle-outline" class="text-2xl"></ion-icon>
+                    <h1 class="text-xl self-center">
+                        Start at 
+                        <span id="startTime">0:00</span>
+                    </h1>
+                </div>
+                <div class=" bg-color3 h-20 text-center flex flex-row items-center justify-center space-x-2">
+                    <ion-icon name="pause-circle-outline" class="text-2xl"></ion-icon>
+                    <h1 class="text-xl self-center">
+                        Stop at
+                        <span id="stopTime">0:00</span>
+                    </h1>
+                </div>
+            </div>
+            <div class="grid grid-cols-2">
+                <div class="bg-color5  h-20 text-center flex flex-row items-center justify-center space-x-2">
+                    <ion-icon name="alarm-outline" class="text-2xl"></ion-icon>
+                    <h1 class="text-xl self-center">
+                        <span id="pay-min">0</span>
+                        Minute(s)
+                    </h1>
+                </div>
+                <div class="bg-color6 h-20 text-center flex flex-row items-center justify-center space-x-2">
+                    <ion-icon name="cash-outline" class="text-2xl"></ion-icon>
+                    <h1 class="text-xl self-center">
+                        <span id="pay-mon">0</span>
+                        Riels
+                    </h1>
+                </div>
+            </div>
+            <div class="bg-teal-400 h-20 text-center flex flex-row items-center justify-center">
+                <button id="btn-bg" class="text-xl bg-color7 w-40 p-3 rounded-xl flex justify-center items-center" onclick="start()" >
+                    <ion-icon id="btn-icon" name="play-outline" class="text-2xl mr-2"></ion-icon>
+                    <span id="btn">Start</span>
+                </button>
+            </div>
+            <div class="bg-green-400 h-20 text-center flex flex-row items-center justify-center space-x-2">
+                <ion-icon name="time-outline" class="text-2xl"></ion-icon>
+                <h1 class="text-xl self-center">
+                    <span id="dateInfo"></span> 
+                    <span id="dateTime"></span>
+                </h1>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="../js/sheesh.js"></script>
+</body>
+</html>
