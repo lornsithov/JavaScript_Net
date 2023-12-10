@@ -111,19 +111,19 @@ const calculate = () =>{
 // Customize TailWindCSS
 tailwind.config = {
     theme: {
-      extend: {
-        backgroundImage: {
-            future: "url('../img/future01.jpg')",
-        },
-        colors: {
-          color1: "#86A3B8",
-          color2: "#E8D2A6",
-          color3: "#F48484",
-          color4: "#F55050",
-          color5: "#645CBB",
-          color6: "#A084DC",
-          color7: "#03C988"
+        extend: {
+            backgroundImage: {
+                future: "url('../img/future01.jpg')",
+            },
+            colors: {
+            color1: "#86A3B8",
+            color2: "#E8D2A6",
+            color3: "#F48484",
+            color4: "#F55050",
+            color5: "#645CBB",
+            color6: "#A084DC",
+            color7: "#03C988"
+            }
         }
-      }
     }
-  }
+}
